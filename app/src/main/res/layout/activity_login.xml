@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/log_in"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- 목이 거북해 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="106dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/top_name"
+        android:textStyle="bold"
+        android:textAppearance="@style/top_name" />
+
+    <!--로그인-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="45dp"
+        android:text="@string/log_in_text"
+        android:textStyle="bold"
+        android:textAppearance="@style/log_in_text"
+        android:gravity="center_vertical"
+        />
+
+    <!--이메일 박스-->
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="30dp"
+        android:hint="E-mail"
+        android:inputType="text"
+        android:background="@drawable/rect_4"
+        />
+
+    <!--비밀번호 박스-->
+    <EditText
+        android:id="@+id/login_pw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="30dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/rect_4"
+        />
+
+
+    <!--로그인 상태 유지-->
+
+
+    <!--로그인 버튼-->
+
+    <CheckBox
+        android:id="@+id/checkBox_log_in"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="50dp"
+        android:buttonTint="#24CBAD"
+        android:text="로그인 상태 유지" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/rect_login"
+        android:text="로그인"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="65dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="목이 거북해 회원이 아니신가요?" />
+
+
+        <!--회원가입 버튼-->
+        <TextView
+            android:id="@+id/text_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:text="@string/sign"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+</LinearLayout>

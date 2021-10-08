@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">목이 거북해</string>
+    <string name="top_name">목이\n거북해</string>
+    <string name="log_in_text">로그인</string>
+    <string name="sign"><u>회원가입</u></string>
+    <string name="double_check"><u>중복확인</u></string>
+</resources>
